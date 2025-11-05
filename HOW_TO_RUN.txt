@@ -1,0 +1,145 @@
+╔════════════════════════════════════════════════════════════════╗
+║        FACE RECOGNITION SYSTEM - HOW TO RUN                    ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 QUICK START (3 EASY STEPS):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+METHOD 1: DOUBLE-CLICK THE BATCH FILE (EASIEST!)
+─────────────────────────────────────────────────
+Simply double-click: run_gui.bat
+
+That's it! The GUI will open automatically.
+
+
+METHOD 2: FROM VISUAL STUDIO
+─────────────────────────────
+1. Open Visual Studio 2022
+2. Open the project folder
+3. In Solution Explorer, right-click "gui.py"
+4. Select "Set as Startup File"
+5. Press F5 or click the green "Run" button
+
+
+METHOD 3: FROM COMMAND LINE / TERMINAL
+───────────────────────────────────────
+1. Open Terminal in Visual Studio (Ctrl + `)
+2. Type: python gui.py
+3. Press Enter
+
+
+METHOD 4: FROM WINDOWS COMMAND PROMPT
+──────────────────────────────────────
+1. Press Win + R
+2. Type: cmd
+3. Type: cd C:\Users\Lenovo\Desktop\python_project_2
+4. Type: python gui.py
+5. Press Enter
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 HOW TO USE THE APPLICATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: PREPARE KNOWN FACES
+────────────────────────────
+Add face images to the "known_faces" folder:
+- Use clear, front-facing photos
+- One face per image
+- Name the file as the person's name (e.g., "john_doe.jpg")
+- Supported formats: .jpg, .jpeg, .png, .bmp
+
+
+STEP 2: LOAD FACES IN THE APPLICATION
+──────────────────────────────────────
+1. The GUI will open automatically
+2. Click "📁 Browse" button
+3. Select the "known_faces" folder
+4. Click "✓ Load Faces" button
+5. Wait for "✓ X face(s) loaded successfully" message
+
+
+STEP 3: START RECOGNIZING!
+───────────────────────────
+Choose one of these options:
+
+📷 ANALYZE IMAGE
+   - Click "📷 Analyze Image"
+   - Select an image file
+   - View results with bounding boxes
+
+🎥 PROCESS VIDEO
+   - Click "🎥 Process Video"
+   - Choose: Separate Window or GUI Canvas
+   - Select a video file
+   - Press 'Q' to stop (for separate window)
+
+📹 START WEBCAM
+   - Click "📹 Start Webcam"
+   - Real-time face recognition begins
+   - Click "⏹ Stop Webcam" when done
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ SETTINGS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MATCH TOLERANCE SLIDER
+   - Lower (0.3-0.5): Stricter matching, fewer false positives
+   - Default (0.6): Balanced accuracy
+   - Higher (0.7-1.0): More flexible, may have false positives
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ TROUBLESHOOTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "Python is not recognized"
+   Solution: Install Python or add it to PATH
+
+❌ "No module named 'face_recognition'"
+   Solution: Run in terminal: pip install face_recognition opencv-python
+
+❌ "No faces loaded"
+   Solution: Add face images to the "known_faces" folder
+
+❌ "Cannot open webcam"
+   Solution: Check if webcam is connected and not in use
+
+❌ Video window closes immediately
+   Solution: Press 'Q' to close manually. Check Activity Log for errors.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 PROJECT FILES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+gui.py                      → Main GUI application (RUN THIS!)
+face_recognition_system.py  → Core face recognition engine
+main.py                     → Command-line interface (alternative)
+run_gui.bat                 → Quick launch script (double-click)
+known_faces/                → Put reference face images here
+test_images/                → Put test images here (optional)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS FOR BEST RESULTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Use good lighting
+✓ Clear, front-facing photos
+✓ Only one face per reference image
+✓ High-quality images work best
+✓ Adjust tolerance if results aren't accurate
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 YOU'RE ALL SET! Just double-click "run_gui.bat" to start!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
